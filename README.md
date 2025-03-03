@@ -69,13 +69,3 @@ print(binary_search_recursive(arr, target, 0, len(arr) - 1))
 
 ---
 
-### **Hints**
-- The **base case** occurs when `left > right`, meaning the search space is empty.
-- Find the **middle index** using `(left + right) // 2`.
-- Compare `arr[mid]` with `target`:
-  - If they are equal, return `mid`.
-  - If `target` is smaller, **search the left half** (`left` remains the same, `right` becomes `mid - 1`).
-  - If `target` is larger, **search the right half** (`left` becomes `mid + 1`, `right` remains the same).
-- Make sure to **call the function recursively** on the correct half.
-
----
